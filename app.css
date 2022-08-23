@@ -1,0 +1,122 @@
+body{
+    background-color: #609aff;
+    font-family: cursive;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    background-color: white;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.pricing-plan{
+    width: 31%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5rem;
+    border-right: 1px solid #e1f1ff;
+}
+.pricing-plan img{
+    width: 100%;
+}
+.pricing-header{
+    letter-spacing: 1.7;
+    text-transform: uppercase;
+    color: #888;
+}
+.pricing-features{
+    padding: 0;
+    width: 75%;
+    text-align: center;
+}
+.pricing-features li{
+    color: #609aff;
+    list-style: none;
+    font-weight: 400;
+    text-align: center;
+    border-top: 2px solid #e1f1ff;
+}
+.pricing-price{
+    color: #609aff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.pricing-button{
+    border: 2px  solid #9dd1ff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color:#609aff;
+    margin-top: 0.5rem;
+}
+.pricing-button:hover{
+    color: white;
+    background-color: #609aff;
+}
+.third-price{
+    margin-top: 1.5rem;
+}
+.is-featured{
+    color:white;
+    background-color:#609aff ;
+}
+.is-featured:hover{
+    color:#609aff;
+    background-color: wheat;
+}
+.pricing-plan:nth-child(3){
+    border-right: none;
+}
+@media(min-width:576px){
+    body{
+        height: 100vh;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .pricing-header{
+        letter-spacing: 0;
+        font-size: 1.2rem;
+    }
+    .pricing-features{
+        font-size: 0.8rem;
+    }
+    .pricing-price{
+        font-size: 1.4rem;
+    }
+    .pricing-button{
+        font-size: 1rem;
+    }
+    .third-price{
+        margin-top: 0.5rem;
+    }
+}
+@media(max-width:576px){
+    .panel{
+        display: flex;
+        flex-direction: column;
+        margin:12rem 0 ;
+    }
+    .pricing-plan{
+        width: 100%;
+        border-bottom: 1px solid #e1f1ff;
+        border-right: none;
+        }
+    .pricing-button{
+        margin-bottom: 1rem;
+    }
+    .pricing-plan:nth-child(3){
+        border-bottom: none;
+    }
+}
